@@ -1,0 +1,392 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin-ext,latin);
+@font-face {
+	font-family: ArialBlack;
+	src: url('../fonts/ariblk.ttf');
+}
+
+@keyframes pozadiAnim1 {
+	0% {opacity: 1;}
+	25% {opacity: 1;}
+	33% {opacity: 0;}
+	92% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-webkit-keyframes pozadiAnim1 {
+	0% {opacity: 1;}
+	25% {opacity: 1;}
+	33% {opacity: 0;}
+	92% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@keyframes pozadiAnim2 {
+	0% {opacity: 1;}
+	59% {opacity: 1;}
+	67% {opacity: 0;}
+	100% {opacity: 0;}
+}
+@-webkit-keyframes pozadiAnim2 {
+	0% {opacity: 1;}
+	59% {opacity: 1;}
+	67% {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+body>div[style*="z-index:15"] {
+	position: fixed !important;
+}
+
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: #535353;
+	background-color: #000000;
+}
+
+/* ############################################## pozadi ############################################### */
+.pozadi {
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 100%;
+	z-index: -100;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.pozadi1 {
+	background-image: url('../images/pozadi/pozadi1_1440.jpg'); /* === 1440x1280 === */
+	max-height: 1280px;
+	-moz-transform: translateZ(0);
+	-webkit-transform: translateZ(0px);
+	-o-transform: translateZ(0px);
+	-ms-transform: translateZ(0px);
+	transform: translateZ(0px);
+}
+.pozadi2 {
+	background-image: url('../images/pozadi/pozadi2_1440.jpg'); /* === 1440x1280 === */
+	max-height: 1280px;
+	animation: pozadiAnim2 18s infinite;
+	-webkit-animation: pozadiAnim2 20s infinite;
+	-moz-transform: translateZ(0);
+	-webkit-transform: translateZ(0px);
+	-o-transform: translateZ(0px);
+	-ms-transform: translateZ(0px);
+	transform: translateZ(0px);
+}
+.pozadi3 {
+	background-image: url('../images/pozadi/pozadi3_1440.jpg'); /* === 1440x1280 === */
+	max-height: 1280px;
+	animation: pozadiAnim1 18s infinite;
+	-webkit-animation: pozadiAnim1 20s infinite;
+	-moz-transform: translateZ(0);
+	-webkit-transform: translateZ(0px);
+	-o-transform: translateZ(0px);
+	-ms-transform: translateZ(0px);
+	transform: translateZ(0px);
+}
+
+
+/* ############################################## kontejner ############################################### */
+.kontejner {
+	position: absolute;
+	width: 480px;
+	right: 15%;
+}
+
+.kontejner a.obrazek {
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin: 20px 4%;
+	border: 1px solid black;
+	opacity: 0.5;
+}
+
+.kontejner a.obrazek:hover,
+.kontejner a.obrazek:focus {
+	opacity: 1;
+}
+
+/* #################### jazyky #################### */
+.jazyky {
+	float: left;
+	width: 55px;
+	height: 165px;
+	background: rgba(255,255,255,0.3);
+	vertical-align: top;
+}
+.jazyky a {
+	display: block;
+	width: inherit;
+	height: 55px;
+	color: rgba(0,0,0,0.3);
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+}
+.jazyky a span {
+	vertical-align: middle;
+	line-height: 55px;
+}
+.jazyky a:hover,
+.jazyky a:focus,
+.jazyky a.active {
+	background: rgba(0,0,0,0.10);
+}
+
+/* #################### obsah #################### */
+.obsah {
+	background: rgba(255,255,255,0.75);
+	margin-left: 55px;
+}
+
+.obsah h1 {
+	margin: 0 0 25px 0;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 1em;
+}
+
+.obsah article {
+	padding: 0 20px;
+	line-height: 1.6em;
+}
+
+.obsah a {
+	color: inherit;
+	text-decoration: none;
+}
+.obsah a:hover {
+	color: black;
+}
+
+/* ============================ logo =============================== */
+.logo {
+	padding: 2em 0;
+	margin: 0 auto 50px auto;
+	width: 300px;
+	text-align: center;
+	font-family: "ArialBlack", Arial;
+	color: black;
+}
+.logo h1 {
+	margin: 0;
+	font-size: 60px;
+	line-height: 1em;
+}
+.logo hr {
+	border: 0;
+	border-bottom: 2px solid red;
+}
+.logo h2 {
+	margin: 0;
+	font-size: 25px;
+	letter-spacing: 14px;
+	line-height: 1em;
+}
+
+/* ================================== pokoje ================================= */
+#pokoje {
+	margin: 5em 0 100px 0;
+}
+
+#pokoje input {
+	display: none;
+}
+#pokoje label {
+	display: block;
+	text-align: center;
+	background: rgba(29,29,29,0.75);
+	border-bottom: 1px solid red;
+	padding: 1.5em 0;
+	height: auto;
+	max-height: 1.3em;
+	overflow: hidden;
+	-moz-transform: translateZ(0);
+	-webkit-transform: translateZ(0px);
+	-o-transform: translateZ(0px);
+	-ms-transform: translateZ(0px);
+	transform: translateZ(0px);
+	-webkit-transition: max-height 0.6s ease;
+    -moz-transition: max-height 0.6s ease;
+    -ms-transition: max-height 0.6s ease;
+    -o-transition: max-height 0.6s ease;
+    transition: max-height 0.6s ease;
+}
+#pokoje label:last-child {
+	border: none;
+}
+#pokoje .sipka {
+	display: block;
+	vertical-align: top;
+	width: 44px;
+	height: 44px;
+	background: url('../images/arrow.png') no-repeat center center;
+	margin: -1.1em 0 0 10px;
+	position: absolute;
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#pokoje article {
+	display: block;
+	vertical-align: top;
+	margin: 0 0 35px 41px;
+	line-height: 1.6em;
+	text-align: left;
+}
+#pokoje article h3 {
+	margin: 0;
+	font-weight: normal;
+	color: white;
+}
+#pokoje article p {
+	margin: 2em 0 0 0;
+}
+
+#pokoje input:checked+label {
+	background: white;
+	max-height: 1000px;
+}
+#pokoje input:not(:checked)+label:hover {
+	background: rgba(110,110,110,0.75);
+}
+#pokoje input:not(:checked)+label:hover h3 {
+	color: white;
+}
+#pokoje input:checked+label .sipka {
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+#pokoje input:checked+label h3 {
+	color: #1a1a1a;
+}
+
+/* ===================================== kontakt ========================================== */
+.kontakt div {
+	display: inline-block;
+	width: 60%;
+	vertical-align: middle;
+	font-family: "ArialBlack", Arial;
+	font-style: normal;
+	line-height: 1em;
+	font-size: 26px;
+	text-align: right;
+}
+.kontakt p {
+	margin: 5px 0;
+}
+.kontakt span {
+	color: #8B8B8B;
+	font-size: 0.4em;
+}
+.kontakt a {
+	display: block;
+}
+
+.kontakt .mail {
+	font-size: 0.48em;
+}
+.kontakt .druhy {
+	font-size: 0.7em;
+}
+.kontakt .druhy span {
+	color: #8B8B8B;
+	font-size: 0.6em;
+}
+
+.kontakt .adresa {
+	color: inherit;
+	display: inline-block;
+	width: 8em;
+	padding: 10px 0 10px 5%;
+	margin-left: 5%;
+	border-left: 1px solid red;
+	border-top: none;
+	vertical-align: middle;
+	font-style: normal;
+	text-align: left;
+}
+
+/* ================================================= mapa ============================================= */
+.mapa {
+	margin: 5em 0 100px 0;
+}
+.mapa iframe {
+	display: block;
+	margin: 0 auto;
+}
+
+.mapa a {
+	font-size: 10px;
+	color: inherit;
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	margin: 5px 20px;
+}
+.mapa a:hover {
+	text-decoration: underline;
+}
+
+/* ================================================ fotky ============================================= */
+.fotky {
+	text-align: center;
+}
+
+.fotky h1 {
+	margin: 0 20px 25px 20px;
+	text-align: left;
+}
+
+/* ================================================ odkazy ============================================= */
+.odkazy {
+	margin: 5em 20px 0 20px;
+}
+
+
+
+
+
+/* ================================================ footer ============================================= */
+footer {
+	margin-top: 5em;
+	font-size: 10px;
+	color: #A3A3A3;
+	padding-bottom: 10px;
+}
+
+footer p {
+	margin: 0 20px;
+}
+footer p .created {
+	float: right;
+}
+footer p .created span {
+	font-weight: bold;
+}
+footer p .created:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+footer + div {
+	padding: 0 20px;
+	text-align: center;
+	color: #A3A3A3;
+	font-size: 10px;
+}

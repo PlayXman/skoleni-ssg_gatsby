@@ -1,0 +1,155 @@
+/* ################################################### do 650px ################################################## */
+@media only screen and (max-width: 650px) {
+
+.kontejner {
+	position: absolute;
+	width: 320px;
+	right: 0;
+}
+
+.jazyky {
+	float: none;
+	width: 100%;
+	height: 55px;
+	vertical-align: auto;
+	text-align: center;
+}
+.jazyky a {
+	display: inline-block;
+	width: 32.6%;
+	height: 55px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.obsah {
+	margin-left: 0;
+}
+
+.logo {
+	width: 223px;
+}
+.logo h1 {
+	font-size: 45px;
+}
+.logo h2 {
+	font-size: 14px;
+}
+
+.kontakt div {
+	width: 100%;
+	font-size: 33px;
+	text-align: center;
+}
+.kontakt .adresa {
+	width: 100%;
+	margin-left: 0;
+	border-left: none;
+	border-top: 1px solid red;
+	padding-left: 0;
+	text-align: center;
+}
+
+.mapa iframe {
+	width: 280px;
+	height: 280px;
+}
+
+}
+
+
+/* ################################################### od 1700px ################################################## */
+@media only screen and (min-width: 1700px) {
+
+body {
+	font-size: 18px;
+}
+
+.kontejner {
+	position: absolute;
+	width: 670px;
+}
+.kontejner a.obrazek {
+	margin: 20px 3.9%;
+}
+
+.obsah article h1 {
+	font-size: 42px;
+}
+
+.logo {
+	width: 350px;
+}
+.logo h1 {
+	font-size: 70px;
+}
+.logo h2 {
+	font-size: 32px;
+}
+
+#pokoje .sipka {
+	height: 68px;
+}
+
+.kontakt div {
+	font-size: 38px;
+}
+.kontakt span {
+	font-size: 22px;
+}
+
+.mapa iframe {
+	width: 575px;
+	height: 575px;
+}
+.mapa a {
+	font-size: 16px;
+}
+
+.fotky h1 {
+	font-size: 42px;
+}
+
+.obsah h1 {
+	font-size: 42px;
+}
+
+footer {
+	font-size: 12px;
+}
+
+}
+
+/* ################################################### pozadi ################################################## */
+/* ====== do 640x1024 ====== */
+@media only screen and (max-width: 640px) {
+.pozadi1 {
+	background-image: url('../images/pozadi/pozadi1_640.jpg');
+	max-height: 1024px;
+}
+.pozadi2 {
+	background-image: url('../images/pozadi/pozadi2_640.jpg');
+	max-height: 1024px;
+}
+.pozadi3 {
+	background-image: url('../images/pozadi/pozadi3_640.jpg');
+	max-height: 1024px;
+}
+}
+
+/* ====== od 1920x1080 + 20px ====== */
+@media only screen and (min-width: 1441px) {
+.pozadi1 {
+	background-image: url('../images/pozadi/pozadi1_1920.jpg');
+	max-height: 1120px;
+}
+.pozadi2 {
+	background-image: url('../images/pozadi/pozadi2_1920.jpg');
+	max-height: 1120px;
+}
+.pozadi3 {
+	background-image: url('../images/pozadi/pozadi3_1920.jpg');
+	max-height: 1120px;
+}
+}
