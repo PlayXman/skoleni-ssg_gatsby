@@ -1,1 +1,1 @@
-**Git**: https://github.com/PlayXman/skoleni-ssg_gatsby
+**Git**: https://github.com/PlayXman/tutorial-ssg_gatsby
